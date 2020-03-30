@@ -25,6 +25,7 @@ p:first-letter {
     color: brown;
     padding: 2px;
 }
+
 .subheading:first-letter {
     font-size: 60px;
     color: brown;
@@ -133,11 +134,6 @@ body {
     text-align: center;
 }
 
-.user-image {
-    margin: 0 0 32px;
-    text-align: center;
-}
-
 .intro h3,
 .portfolio h3 {
     margin: 0 0 12px;
@@ -205,6 +201,11 @@ body {
     text-align: center;
 }
 
+.project-img {
+    box-shadow: 3px 3px 10px 3px rgba(0, 0, 0, 0.50);
+    border-radius: 15px;
+}
+
 .projects p {
     margin: 0 0 24px;
 }
@@ -242,4 +243,24 @@ body {
 .footer-phone {
     padding-left: 25px;
     background-image: url("img/icon-phone-footer.svg");
+}
+
+.user-image {
+    display: block;
+    text-align: center;
+    height: 250px;
+    width: auto;
+    margin: auto;
+    box-shadow: 3px 3px 10px 3px rgba(0, 0, 0, 0.50);
+    border-radius: 25px;
+}
+
+.heading {
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.50);
+    border-radius: 150px;
+}
+
+.button {
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.50);
+    border-radius: 15px;
 }
