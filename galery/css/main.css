@@ -1,21 +1,24 @@
-img{
-	max-width: 100%;
-	height: auto;
+img {
+    max-width: 100%;
+    height: auto;
 }
-.pic{
-	max-height: 200px;
+
+.pic {
+    max-height: 200px;
 }
-.gallery .pic{
-	opacity: 0;
-	transition: all .5s;
-	/*transform: scale3d(1.2, 1.2, 1.2);*/
-	transform: translateX(30px);
-	display: inline-block;
+
+.gallery .pic {
+    opacity: 0;
+    transition: all .5s;
+    /*transform: scale3d(1.2, 1.2, 1.2);*/
+    transform: translateX(30px);
+    display: inline-block;
 }
-.gallery .showing{
-	opacity: 1;
-	transform: translateX(0px);
-	/*transform: scale3d(1, 1, 1);*/
+
+.gallery .showing {
+    opacity: 1;
+    transform: translateX(0px);
+    /*transform: scale3d(1, 1, 1);*/
 }
 
 .button {
@@ -33,4 +36,9 @@ p:first-letter {
     font-size: 20px;
     color: brown;
     padding: 2px;
+}
+
+img {
+    box-shadow: 2px 2px 9px 2px rgba(0, 0, 0, 0.50);
+    border-radius: 15px;
 }
