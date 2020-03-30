@@ -1,97 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Plugins</title>
-	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-	<link href="css/main.css" rel="stylesheet">	
-<!--[if lt IE 9]>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Plugins</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <script src="../highslide/highslide/highslide.js" type="text/javascript"></script>
+    <link href="../highslide/highslide/highslide.css" rel="stylesheet" property="stylesheet" />
+    <script type="text/javascript">
+        hs.graphicsDir = '../highslide/highslide/graphics/';
+        hs.wrapperClassName = 'your-own-style';
+    </script>
+    <!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
 </head>
+
 <body>
-
-<div class="container">
-	<div class="row">
-		<div class="col-md-12">
-			<p>Тут будет текст</p>
-		</div>
-		<div class="col-md-12">
-			<hr>
-			<div class="gallery text-center">
-				<div class="row">
-					<div class="col-sm-2 col-xs-6">
-						<img src="img/p1.jpg" alt="" class="thumbnail pic">
-					</div>
-					<div class="col-sm-2 col-xs-6">
-						<img src="img/p2.jpg" alt="" class="thumbnail pic">
-					</div>
-					<div class="col-sm-2 col-xs-6">
-						<img src="img/p3.jpg" alt="" class="thumbnail pic">
-					</div>
-					<div class="col-sm-2 col-xs-6">
-						<img src="img/p4.jpg" alt="" class="thumbnail pic">
-					</div>
-					<div class="col-sm-2 col-xs-6">
-						<img src="img/p5.jpg" alt="" class="thumbnail pic">
-					</div>
-					<div class="col-sm-2 col-xs-6">
-						<img src="img/p6.jpg" alt="" class="thumbnail pic">
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-sm-2 col-xs-6">
-						<img src="img/p7.jpg" alt="" class="thumbnail pic">
-					</div>
-					<div class="col-sm-2 col-xs-6">
-						<img src="img/p8.jpg" alt="" class="thumbnail pic">
-					</div>
-					<div class="col-sm-2 col-xs-6">
-						<img src="img/p9.jpg" alt="" class="thumbnail pic">
-					</div>
-					<div class="col-sm-2 col-xs-6">
-						<img src="img/p10.jpg" alt="" class="thumbnail pic">
-					</div>
-					<div class="col-sm-2 col-xs-6">
-						<img src="img/p11.jpg" alt="" class="thumbnail pic">
-					</div>
-					<div class="col-sm-2 col-xs-6">
-						<img src="img/p12.jpg" alt="" class="thumbnail pic">
-					</div>
-				</div>
-			</div>
-			<hr>
-		</div>
-	</div>
-</div>
-<div style="height: 1000px;"></div>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script>
-	$(window).scroll(function(){
-		var wScroll = $(this).scrollTop();
-		$('.gallery .row').each(function(){
-			if(wScroll + 400 > $(this).offset().top && !$(this).hasClass('isshow')){
-				$(this).addClass('isshow');
-				$(this).find('.pic').each(function(i, el){
-					setTimeout(function(){
-						$(el).addClass('showing');
-					}, 100 * i);
-				});
-			}
-
-			if(wScroll + 600 < $(this).offset().top && $(this).hasClass('isshow')){
-				$(this).removeClass('isshow');
-				$(this).find('.pic').each(function(i, el){
-					$(el).removeClass('showing');
-				});
-			}
-		});
-	});
-</script>
-
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <p>Фотографии сделаные мною в разное время, некоторые из них были обработаны в фоторедакторах.</p>
+            </div>
+            <div class="col-md-12">
+                <hr>
+                <div class="gallery text-center">
+                    <div class="row">
+                        <div class="col-sm-2 col-xs-6">
+                            <a href="img/DSC_0110.jpg" class="highslide" onclick="return hs.expand(this)"> <img src="img/DSC_0110.jpg" alt="" class="thumbnail pic"></a>
+                        </div>
+                        <div class="col-sm-2 col-xs-6">
+                            <a href="img/DSC_0116.jpg" class="highslide" onclick="return hs.expand(this)"> <img src="img/DSC_0116.jpg" alt="" class="thumbnail pic"></a>
+                        </div>
+                        <div class="col-sm-2 col-xs-6">
+                            <a href="img/DSC_0155.jpg" class="highslide" onclick="return hs.expand(this)"> <img src="img/DSC_0155.jpg" alt="" class="thumbnail pic"></a>
+                        </div>
+                        <div class="col-sm-2 col-xs-6">
+                            <a href="img/DSC_0171.jpg" class="highslide" onclick="return hs.expand(this)"> <img src="img/DSC_0171.jpg" alt="" class="thumbnail pic"></a>
+                        </div>
+                        <div class="col-sm-2 col-xs-6">
+                            <a href="img/DSC_0180.jpg" class="highslide" onclick="return hs.expand(this)"> <img src="img/DSC_0180.jpg" alt="" class="thumbnail pic"></a>
+                        </div>
+                        <div class="col-sm-2 col-xs-6">
+                            <a href="img/DSC_0184.jpg" class="highslide" onclick="return hs.expand(this)"> <img src="img/DSC_0184.jpg" alt="" class="thumbnail pic"></a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-2 col-xs-6">
+                            <a href="img/DSC_0215.jpg" class="highslide" onclick="return hs.expand(this)"> <img src="img/DSC_0215.jpg" alt="" class="thumbnail pic"></a>
+                        </div>
+                        <div class="col-sm-2 col-xs-6">
+                            <a href="img/DSC_0292.jpg" class="highslide" onclick="return hs.expand(this)"> <img src="img/DSC_0292.jpg" alt="" class="thumbnail pic"></a>
+                        </div>
+                        <div class="col-sm-2 col-xs-6">
+                            <a href="img/DSC_0388.jpg" class="highslide" onclick="return hs.expand(this)"> <img src="img/DSC_0388.jpg" alt="" class="thumbnail pic"></a>
+                        </div>
+                        <div class="col-sm-2 col-xs-6">
+                            <a href="img/DSC_0403.jpg" class="highslide" onclick="return hs.expand(this)"> <img src="img/DSC_0403.jpg" alt="" class="thumbnail pic"></a>
+                        </div>
+                        <div class="col-sm-2 col-xs-6">
+                            <a href="img/DSC_0479.jpg" class="highslide" onclick="return hs.expand(this)"> <img src="img/DSC_0479.jpg" alt="" class="thumbnail pic"></a>
+                        </div>
+                        <div class="col-sm-2 col-xs-6">
+                            <a href="img/DSC_0512.jpg" class="highslide" onclick="return hs.expand(this)"> <img src="img/DSC_0512.jpg" alt="" class="thumbnail pic"></a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-2 col-xs-6">
+                            <a href="img/DSC_0516.jpg" class="highslide" onclick="return hs.expand(this)"> <img src="img/DSC_0516.jpg" alt="" class="thumbnail pic"></a>
+                        </div>
+                        <div class="col-sm-2 col-xs-6">
+                            <a href="img/DSC_0541.jpg" class="highslide" onclick="return hs.expand(this)"> <img src="img/DSC_0541.jpg" alt="" class="thumbnail pic"></a>
+                        </div>
+                        <div class="col-sm-2 col-xs-6">
+                            <a href="img/DSC_0561(1).jpg" class="highslide" onclick="return hs.expand(this)"> <img src="img/DSC_0561(1).jpg" alt="" class="thumbnail pic"></a>
+                        </div>
+                        <div class="col-sm-2 col-xs-6">
+                            <a href="img/DSC_0561.jpg" class="highslide" onclick="return hs.expand(this)"> <img src="img/DSC_0561.jpg" alt="" class="thumbnail pic"></a>
+                        </div>
+                        <div class="col-sm-2 col-xs-6">
+                            <a href="img/DSC_0637.jpg" class="highslide" onclick="return hs.expand(this)"> <img src="img/DSC_0637.jpg" alt="" class="thumbnail pic"></a>
+                        </div>
+                        <div class="col-sm-2 col-xs-6">
+                            <a href="img/DSC_0880.jpg" class="highslide" onclick="return hs.expand(this)"> <img src="img/DSC_0880.jpg" alt="" class="thumbnail pic"></a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-2 col-xs-6">
+                            <a href="img/DSC_0934.jpg" class="highslide" onclick="return hs.expand(this)"> <img src="img/DSC_0934.jpg" alt="" class="thumbnail pic"></a>
+                        </div>
+                        <div class="col-sm-2 col-xs-6">
+                            <a href="img/DSC_0957-2.jpg" class="highslide" onclick="return hs.expand(this)"> <img src="img/DSC_0957-2.jpg" alt="" class="thumbnail pic"></a>
+                        </div>
+                        <div class="col-sm-2 col-xs-6">
+                            <a href="img/DSC_1076.jpg" class="highslide" onclick="return hs.expand(this)"> <img src="img/DSC_1076.jpg" alt="" class="thumbnail pic"></a>
+                        </div>
+                        <div class="col-sm-2 col-xs-6">
+                            <a href="img/DSC_1259.jpg" class="highslide" onclick="return hs.expand(this)"> <img src="img/DSC_1259.jpg" alt="" class="thumbnail pic"></a>
+                        </div>
+                        <div class="col-sm-2 col-xs-6">
+                            <a href="img/DSC_1529.jpg" class="highslide" onclick="return hs.expand(this)"> <img src="img/DSC_1529.jpg" alt="" class="thumbnail pic"></a>
+                        </div>
+                        <div class="col-sm-2 col-xs-6">
+                            <a href="img/DSC_1672.jpg" class="highslide" onclick="return hs.expand(this)"> <img src="img/DSC_1672.jpg" alt="" class="thumbnail pic"></a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-2 col-xs-6">
+                            <a href="img/DSC_1928.jpg" class="highslide" onclick="return hs.expand(this)"> <img src="img/DSC_1928.jpg" alt="" class="thumbnail pic"></a>
+                        </div>
+                        <div class="col-sm-2 col-xs-6">
+                            <a href="img/DSC_1954.jpg" class="highslide" onclick="return hs.expand(this)"> <img src="img/DSC_1954.jpg" alt="" class="thumbnail pic"></a>
+                        </div>
+                        <div class="col-sm-2 col-xs-6">
+                            <a href="img/DSC_1967.jpg" class="highslide" onclick="return hs.expand(this)"> <img src="img/DSC_1967.jpg" alt="" class="thumbnail pic"></a>
+                        </div>
+                        <div class="col-sm-2 col-xs-6">
+                            <a href="img/DSC_2697.jpg" class="highslide" onclick="return hs.expand(this)"> <img src="img/DSC_2697.jpg" alt="" class="thumbnail pic"></a>
+                        </div>
+                        <div class="col-sm-2 col-xs-6">
+                            <a href="img/DSC_3100.jpg" class="highslide" onclick="return hs.expand(this)"> <img src="img/DSC_3100.jpg" alt="" class="thumbnail pic"></a>
+                        </div>
+                        <div class="col-sm-2 col-xs-6">
+                            <a href="img/DSC_3331.jpg" class="highslide" onclick="return hs.expand(this)"> <img src="img/DSC_3331.jpg" alt="" class="thumbnail pic"></a>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-2 col-xs-6">
+                                <a href="img/DSC_3444.jpg" class="highslide" onclick="return hs.expand(this)"> <img src="img/DSC_3444.jpg" alt="" class="thumbnail pic"></a>
+                            </div>
+                            <div class="col-sm-2 col-xs-6">
+                                <a href="img/DSC_3529.jpg" class="highslide" onclick="return hs.expand(this)"> <img src="img/DSC_3529.jpg" alt="" class="thumbnail pic"></a>
+                            </div>
+                            <div class="col-sm-2 col-xs-6">
+                                <a href="img/DSC_3532.jpg" class="highslide" onclick="return hs.expand(this)"> <img src="img/DSC_3532.jpg" alt="" class="thumbnail pic"></a>
+                            </div>
+                            <div class="col-sm-2 col-xs-6">
+                                <a href="img/DSC_4312.jpg" class="highslide" onclick="return hs.expand(this)"> <img src="img/DSC_4312.jpg" alt="" class="thumbnail pic"></a>
+                            </div>
+                            <div class="col-sm-2 col-xs-6">
+                                <a href="img/DSC_5438.jpg" class="highslide" onclick="return hs.expand(this)"> <img src="img/DSC_5438.jpg" alt="" class="thumbnail pic"></a>
+                            </div>
+                            <div class="col-sm-2 col-xs-6">
+                                <a href="img/DSC_5482.jpg" class="highslide" onclick="return hs.expand(this)"> <img src="img/DSC_5482.jpg" alt="" class="thumbnail pic"></a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-2 col-xs-6">
+                                <a href="img/DSC_6261.jpg" class="highslide" onclick="return hs.expand(this)"> <img src="img/DSC_6261.jpg" alt="" class="thumbnail pic"></a>
+                            </div>
+                            <div class="col-sm-2 col-xs-6">
+                                <a href="img/DSC_6367.jpg" class="highslide" onclick="return hs.expand(this)"> <img src="img/DSC_6367.jpg" alt="" class="thumbnail pic"></a>
+                            </div>
+                            <div class="col-sm-2 col-xs-6">
+                                <a href="img/DSC_6373.jpg" class="highslide" onclick="return hs.expand(this)"> <img src="img/DSC_6373.jpg" alt="" class="thumbnail pic"></a>
+                            </div>
+                            <div class="col-sm-2 col-xs-6">
+                                <a href="img/DSC_6449.jpg" class="highslide" onclick="return hs.expand(this)"> <img src="img/DSC_6449.jpg" alt="" class="thumbnail pic"></a>
+                            </div>
+                            <div class="col-sm-2 col-xs-6">
+                                <a href="img/DSC_7069.jpg" class="highslide" onclick="return hs.expand(this)"> <img src="img/DSC_7069.jpg" alt="" class="thumbnail pic"></a>
+                            </div>
+                            <div class="col-sm-2 col-xs-6">
+                                <a href="img/DSC_7268.jpg" class="highslide" onclick="return hs.expand(this)"> <img src="img/DSC_7268.jpg" alt="" class="thumbnail pic"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr> </div>
+        </div>
+    </div>
+    <div class="container"> <a class="button" href="../index.html">На главную</a></div>
+    <div style="height: 1000px;"></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script>
+        $(window).scroll(function () {
+            var wScroll = $(this).scrollTop();
+            $('.gallery .row').each(function () {
+                if (wScroll + 400 > $(this).offset().top && !$(this).hasClass('isshow')) {
+                    $(this).addClass('isshow');
+                    $(this).find('.pic').each(function (i, el) {
+                        setTimeout(function () {
+                            $(el).addClass('showing');
+                        }, 100 * i);
+                    });
+                }
+                if (wScroll + 600 < $(this).offset().top && $(this).hasClass('isshow')) {
+                    $(this).removeClass('isshow');
+                    $(this).find('.pic').each(function (i, el) {
+                        $(el).removeClass('showing');
+                    });
+                }
+            });
+        });
+    </script>
 </body>
+
 </html>

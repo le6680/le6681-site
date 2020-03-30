@@ -17,3 +17,20 @@ img{
 	transform: translateX(0px);
 	/*transform: scale3d(1, 1, 1);*/
 }
+
+.button {
+    padding: 6px 20px;
+    display: inline-block;
+    vertical-align: baseline;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 4px;
+    background-color: #288be6;
+    color: #ffffff;
+}
+
+p:first-letter {
+    font-size: 20px;
+    color: brown;
+    padding: 2px;
+}
